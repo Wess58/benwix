@@ -1,0 +1,13 @@
+.Logo {
+  background-color:
+}
+.Logo img{
+  width: 10%;
+  height: 10%;
+}
+.Logo h1 {
+  font-family: 'Megrim', cursive;
+  text-align: center;
+  font-weight: 500;
+  font-size: 100px;
+}
