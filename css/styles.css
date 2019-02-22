@@ -1,42 +1,54 @@
 /* Top and Bottom borders go out */
-.red {
-  background-color: #000;
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0);
 }
 
-.red a {
-  color: #fff;
+nav .navbar-brand {
+  border: 2px solid;
+  border-radius: 0 10px 0 10px;
+  padding: 5px;
+  color: #000 !important;
+  font-family: 'Megrim', cursive;
+}
+
+nav a {
   text-decoration: none;
   margin: 0px 10px;
   padding: 10px 10px;
   position: relative;
   z-index: 0;
+  color: #000 !important;
   cursor: pointer;
 }
 
-.topBotomBordersOut a:before,
-.topBotomBordersOut a:after {
+nav a:before,
+nav a:after {
   position: absolute;
   left: 0px;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: #000;
   content: "";
   opacity: 0;
   transition: all 0.3s;
 }
 
-.topBotomBordersOut a:before {
+nav a:before {
   top: 0px;
   transform: translateY(10px);
 }
 
-.topBotomBordersOut a:after {
+nav a:after {
   bottom: 0px;
   transform: translateY(-10px);
 }
 
-.topBotomBordersOut a:hover:before,
-.topBotomBordersOut a:hover:after {
+nav a:hover:before,
+nav a:hover:after {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -52,6 +64,7 @@
   background-position: center;
   background-attachment: fixed;
   color: #fff;
+  height: 80vh;
 }
 
 .Logo img {
@@ -71,6 +84,116 @@
   text-align: center;
   font-family: 'Sacramento', cursive;
   font-size: 40px;
+}
+
+/* Arrow & Hover Animation START*/
+#more-arrows {
+  width: 75px;
+  height: 65px;
+}
+
+#more-arrows:hover polygon {
+  fill: #fff;
+  transition: all .3s ease-out;
+}
+
+#more-arrows:hover polygon.arrow-bottom {
+  -webkit-transform: translateY(-18px);
+  transform: translateY(-18px);
+}
+
+#more-arrows:hover polygon.arrow-top {
+  -webkit-transform: translateY(18px);
+  transform: translateY(18px);
+}
+
+polygon {
+  fill: #fff;
+  transition: all .2s ease-out;
+}
+
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+
+polygon.arrow-top {
+  opacity: 0.5;
+}
+
+/* Arrow & Hover Animation END */
+.container-fluid {
+  margin-bottom: 2%;
+}
+
+.OutDoor {
+  height: 50vh;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 40%), url("../images/applause-audience-band-196652.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  padding-top: 5%;
+  border-radius: 0 20px 0 10px;
+}
+
+.dinnerParties {
+  height: 50vh;
+  background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 40%), url("../images/alcohol-alcoholic-bar-16408.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  padding-top: 5%;
+  border-radius: 0 20px 0 10px;
+}
+
+.Sound {
+  height: 50vh;
+  background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 40%), url("../images/blur-bokeh-electronics-919734.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  padding-top: 5%;
+  border-radius: 0 20px 0 10px;
+}
+
+.card {
+  width: 60%;
+  background-color: transparent;
+  border-style: none;
+}
+
+.footer {
+  bottom: 0;
+  text-align: center;
+}
+
+.footer span {
+  font-family: 'Megrim', cursive;
+}
+
+.wrapper img {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  transition: all .3s;
+}
+
+.wrapper img:hover {
+  filter: brightness(50%);
 }
 
 /* SWING ANIMATION START*/
@@ -146,3 +269,32 @@
 }
 
 /* SWING ANIMATION END*/
+/* FADEIN SLIDE ANIMATION */
+.Logo h1, .Logo p {
+  -webkit-animation: slide 3s linear 1;
+  animation: slide 3s linear 1;
+}
+
+@keyframes slide {
+  from {
+    margin-left: 50px;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide {
+  from {
+    margin-left: 50px;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* FADEIN SLIDE ANIMATION END*/
