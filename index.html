@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BENWIX</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Megrim|Sacramento" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Megrim|Sacramento|Russo+One|Kreon" rel="stylesheet">
   <link rel="shortcut icon" href="images/calendar.png">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.3.1.js"></script>
@@ -14,26 +15,24 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light">
-    <span class="navbar-brand" href="#">BENIX</span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">ABOUT</a>
-        <a class="nav-item nav-link" href="#">EVENTS</a>
-        <a class="nav-item nav-link" href="#footer">CONTACT</a>
-      </div>
-    </div>
-  </nav>
+   <span class="navbar-brand" href="#">BENIX</span>
+   <img src="images/menu-button.png" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+     <div class="navbar-nav">
+       <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
+         <a class="nav-item nav-link" href="#WhatWeDo">WHAT WE DO</a>
+       <a class="nav-item nav-link" href="#Gallery">GALLERY</a>
+       <a class="nav-item nav-link" href="#footer">CONTACT</a>
+     </div>
+   </div>
+ </nav>
   <img onclick="topFunction()" id="myBtn" title="Go to top" src="images/direction.png">
 
   <div class="container-fluid">
 
     <div class="container-fluid Logo">
 
-      <div class="imageLogo" style="display:flex;justify-content:center;align-items:center;">
+      <div class="imageLogo animated fadeIn" style="display:flex;justify-content:center;align-items:center;">
         <img src="images/calendar.png">
       </div>
       <h1>BENWIX</h1>
@@ -50,7 +49,7 @@
       </div>
     </div>
 
-    <div class="container-fluid OutDoor">
+    <div class="container-fluid OutDoor" id="WhatWeDo">
       <div class="row">
         <div class="col-md-6">
 
@@ -58,7 +57,7 @@
         <div class="col-md-6">
           <div class="card">
             <h2>Outdoor Events</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>From natural parks and outdoor amphitheaters to some of our most exhilirating waterfront beaches, we are sure to make an unforgettable experience, not just a festival.</p>
           </div>
         </div>
       </div>
@@ -69,7 +68,7 @@
         <div class="col-md-6" style="display:flex;justify-content:center;align-items:center;">
           <div class="card">
             <h2>Dinner Parties</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>When you picture the perfect dinner party, you probably think of a dozen close friends gathered around the table, enjoying a meal, sipping wine and engaging in endless conversations. The first crucial decision when it comes to hosting a dinner party is what kind of ambience you'd like to create. </p>
           </div>
 
         </div>
@@ -84,7 +83,7 @@
         <div class="col-md-6" style="display:flex;justify-content:center;align-items:center;">
           <div class="card">
             <h2>Indoor Parties</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>If you prefer to have a good time in privacy or simply need some ideas for rainy day activities for the kids, well, we've got you covered, take your pick from indoor attractions such as museums, aquariums and galleries, or if you’re feeling braver, there are climbing centres, underground caverns and ice skating rinks.</p>
           </div>
         </div>
         <div class="col-md-6">

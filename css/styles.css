@@ -1,6 +1,11 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+  font-family: 'Kreon', serif;
+  font-size: 20px;
+}
+
 /* Top and Bottom borders go out */
 .navbar {
   position: fixed;
@@ -22,6 +27,7 @@ nav .navbar-brand {
 }
 
 nav a {
+  font-family: 'Russo One', sans-serif;
   text-decoration: none;
   margin: 0px 10px;
   padding: 10px 10px;
@@ -57,6 +63,11 @@ nav a:hover:before,
 nav a:hover:after {
   opacity: 1;
   transform: translateY(0px);
+}
+nav img{
+  width: 50px;
+  height: 50px;
+  visibility: hidden;
 }
 
 /* end nabvar */
@@ -206,6 +217,10 @@ polygon.arrow-top {
   border-style: none;
 }
 
+.card h2 {
+  font-family: 'Russo One', sans-serif;
+}
+
 .footer {
   bottom: 0;
   text-align: center;
@@ -328,3 +343,34 @@ polygon.arrow-top {
 }
 
 /* FADEIN SLIDE ANIMATION END*/
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media only screen and (max-width: 700px) {
+  nav img{
+    visibility: visible;
+  }
+  .Logo {
+    padding-top: 20%;
+  }
+
+  .Logo h1 {
+    font-size: 50px;
+  }
+
+  .OutDoor {
+    height: 70vh;
+  }
+
+  .dinnerParties {
+    height: 70vh;
+  }
+
+  .Sound {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Logo h1 {
+    font-size: 50px;
+  }
+}
