@@ -5,6 +5,7 @@
   margin-bottom: 2em;
   padding: 0 !important;
   overflow-x: hidden;
+  margin-bottom: 10%;
 }
 
 .Gallery h2 {
@@ -14,7 +15,7 @@
 
 .button img {
   cursor: pointer;
-  width: 80%;
+  width: 60%;
 }
 
 .cards-wrapper {
@@ -47,14 +48,13 @@
   width: 20rem;
   height: 12rem;
   object-fit: cover;
-  transition: all linear .4s;
+  transition: all linear .2s;
 }
 
 .box img:hover {
   transform: scale(2.0);
   object-fit: cover;
-  border-radius: 5px;
-}
+  }
 
 .box:nth-child(2n) {
   transform: scale(0.85);
@@ -276,6 +276,7 @@
     transform: scale(0.75) translateX(0);
   }
 }
+
 /* MEDIA QUERIES FOR RESPONSIVENESS */
 @media only screen and (max-width: 500px) {
   .box {
@@ -290,10 +291,12 @@
     position: relative;
     /* transition: 1s all; */
   }
+
   .button img {
     cursor: pointer;
     width: 50%;
   }
+
   .box img:hover {
     transform: scale(1.25);
     object-fit: cover;
