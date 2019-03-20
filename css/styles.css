@@ -11,23 +11,25 @@ body {
 .navbar {
   width: 100%;
   top: 0;
-  background: linear-gradient(to right, #fff 10%, rgba(255, 255, 255, 0.7) 10%);
+  background: linear-gradient(45deg, #fff 20%, rgba(255, 255, 255, 0.9) 20%);
   box-shadow: 0 0 20px 5px rgba(0, 0, 0);
 }
 
 nav .navbar-brand {
   border: 2px solid;
   border-radius: 0 10px 0 10px;
-  padding: 5px;
+  padding: 3px;
   color: #000 !important;
   font-family: 'Megrim', cursive;
-  background: linear-gradient(10deg, #000, #bb981d, #fad25a);
+  font-size: 40px;
+  background: linear-gradient(35deg, #000, #bb981d, #fad25a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 nav a {
   font-family: 'Russo One', sans-serif;
+  font-size: 15px;
   text-decoration: none;
   margin: 0px 10px;
   padding: 10px 10px;
@@ -100,7 +102,7 @@ nav img {
   background-position: center;
   background-attachment: fixed;
   color: #fff;
-  height: 80vh;
+  height: 90vh;
 }
 
 .Logo img {
@@ -169,7 +171,7 @@ polygon.arrow-top {
 
 .OutDoor {
   height: 50vh;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 40%), url("../images/applause-audience-band-196652.jpg");
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 40%), url("../images/barbecue-bbq-chicken-8572.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -199,7 +201,7 @@ polygon.arrow-top {
 
 .Sound {
   height: 50vh;
-  background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 40%), url("../images/blur-bokeh-electronics-919734.jpg");
+  background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 40%), url("../images/amplifier-audio-mixer-blur-1481310.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -229,6 +231,10 @@ polygon.arrow-top {
 
 .footer span {
   font-family: 'Megrim', cursive;
+}
+.wrapper{
+  background-color: grey;
+  height: 10vh;
 }
 
 .wrapper img {
@@ -345,20 +351,33 @@ polygon.arrow-top {
 
 /* FADEIN SLIDE ANIMATION END*/
 /* MEDIA QUERIES FOR RESPONSIVENESS */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1280px) {
+  .navbar {
+    background: linear-gradient(45deg, #fff 30%, rgba(255, 255, 255, 0.9) 30%);
+  }
+  .Logo img {
+    margin-top: 8%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   body {
     font-size: 16px;
   }
 
   .navbar {
-    background: linear-gradient(to right, #fff 30%, rgba(255, 255, 255, 0.7) 30%);
+    background: linear-gradient(to right, #fff 30%, rgba(255, 255, 255, 0.9) 30%);
   }
-
+  nav .navbar-brand{
+    font-size: 30px;
+  }
   nav img {
     visibility: visible;
   }
 
   nav a {
+    text-align: center;
+    margin: auto;
     width: 30%;
   }
 
@@ -380,11 +399,5 @@ polygon.arrow-top {
 
   .Sound {
     height: 70vh;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .Logo h1 {
-    font-size: 50px;
   }
 }
