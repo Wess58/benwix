@@ -171,9 +171,13 @@ polygon.arrow-top {
   margin-bottom: 2%;
 }
 
+.container {
+  margin-bottom: 5%;
+}
+
 .OutDoor {
-  height: 50vh;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 40%), url("../images/barbecue-bbq-chicken-8572.jpg");
+  height: 70vh;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0) 70%), url("../images/barbecue-bbq-chicken-8572.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -184,11 +188,12 @@ polygon.arrow-top {
   color: #fff;
   padding-top: 5%;
   border-radius: 0 20px 0 10px;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.5);
 }
 
 .dinnerParties {
-  height: 50vh;
-  background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 40%), url("../images/alcohol-alcoholic-dinner-6290.jpg");
+  height: 70vh;
+  background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0) 70%), url("../images/alcohol-alcoholic-dinner-6290.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -199,11 +204,12 @@ polygon.arrow-top {
   color: #fff;
   padding-top: 5%;
   border-radius: 0 20px 0 10px;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.5);
 }
 
 .Sound {
-  height: 50vh;
-  background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 40%), url("../images/amplifier-audio-mixer-blur-1481310.jpg");
+  height: 70vh;
+  background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0) 70%), url("../images/amplifier-audio-mixer-blur-1481310.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -214,16 +220,53 @@ polygon.arrow-top {
   color: #fff;
   padding-top: 5%;
   border-radius: 0 20px 0 10px;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.5);
 }
 
 .card {
-  width: 60%;
+  width: 70%;
   background-color: transparent;
   border-style: none;
 }
 
 .card h2 {
   font-family: 'Russo One', sans-serif;
+}
+
+.card img{
+  width: 70px;
+  height: 70px;
+
+}
+.card img{
+  width: 70px;
+  height: 70px;
+
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  animation-play-state: paused;
+}
+
+.container:hover .card img{
+  animation-play-state: running;
+}
+
+
+.card p {
+  width: 80%;
+  opacity: 0;
+  border: 5px solid #fff8;
+  margin-top: -10%;
+  padding: 10px;
+  border-radius: 0 20px 0 10px;
+  transition: .5s ease;
+}
+.container:hover .card p {
+  margin-top: 0;
+  opacity: 1;
 }
 
 .footer {
@@ -234,7 +277,8 @@ polygon.arrow-top {
 .footer span {
   font-family: 'Megrim', cursive;
 }
-.footer h3{
+
+.footer h3 {
   font-family: 'Megrim', cursive;
   text-align: center;
   font-weight: 500;
@@ -246,7 +290,8 @@ polygon.arrow-top {
   -webkit-text-fill-color: transparent;
   /* line-height: 200px; */
 }
-.wrapper{
+
+.wrapper {
   height: 10vh;
 }
 
@@ -261,7 +306,7 @@ polygon.arrow-top {
   filter: brightness(50%);
 }
 
-/* SWING ANIMATION START*/
+/* NOD ANIMATION START*/
 @-webkit-keyframes swing {
   15% {
     -webkit-transform: translateY(5px);
@@ -333,32 +378,43 @@ polygon.arrow-top {
   animation-iteration-count: 1;
 }
 
-/* SWING ANIMATION END*/
+/* NOD ANIMATION END*/
 /* FADEIN SLIDE ANIMATION */
-.Logo h1, .Logo p {
-  -webkit-animation: slide 3s linear 1;
-  animation: slide 3s linear 1;
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp -webkit-animation-duration:4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both
 }
 
-@keyframes slide {
-  from {
-    margin-left: 50px;
+@-webkit-keyframes fadeInUp {
+  0% {
     opacity: 0;
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px)
   }
 
-  to {
+  100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
   }
 }
 
-@-webkit-keyframes slide {
-  from {
-    margin-left: 50px;
+@keyframes fadeInUp {
+  0% {
     opacity: 0;
+    -webkit-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    transform: translateY(200px)
   }
 
-  to {
+  100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
   }
 }
 
@@ -368,6 +424,7 @@ polygon.arrow-top {
   .navbar {
     background: linear-gradient(45deg, #fff 30%, rgba(255, 255, 255, 0.9) 30%);
   }
+
   .Logo img {
     margin-top: 8%;
   }
@@ -381,9 +438,11 @@ polygon.arrow-top {
   .navbar {
     background: linear-gradient(to right, #fff 30%, rgba(255, 255, 255, 0.9) 30%);
   }
-  nav .navbar-brand{
+
+  nav .navbar-brand {
     font-size: 30px;
   }
+
   nav img {
     visibility: visible;
   }
