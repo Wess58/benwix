@@ -48,7 +48,7 @@
   width: 20rem;
   height: 12rem;
   object-fit: cover;
-  transition: all linear .2s;
+  transition: all ease .5s;
 }
 
 .box img:hover {
