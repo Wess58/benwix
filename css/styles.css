@@ -242,8 +242,8 @@ polygon.arrow-top {
   width: 70px;
   height: 70px;
 
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
+  -webkit-animation: swing 2s ease-out;
+  animation: swing 2s ease-out;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 
@@ -262,7 +262,7 @@ polygon.arrow-top {
   margin-top: -10%;
   padding: 10px;
   border-radius: 0 20px 0 10px;
-  transition: .5s ease;
+  transition: .4s ease;
 }
 .container:hover .card p {
   margin-top: 0;
@@ -381,9 +381,8 @@ polygon.arrow-top {
 /* NOD ANIMATION END*/
 /* FADEIN SLIDE ANIMATION */
 .fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp -webkit-animation-duration:3s;
-  animation-duration: 3s;
+  -webkit-animation: fadeInUp 3s ease;
+  animation: fadeInUp 3s ease;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both
 }
