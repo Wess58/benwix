@@ -3,10 +3,14 @@ html {
 }
 
 body {
-  font-family: 'Kreon', serif;
+  font-family: 'Raleway', sans-serif;
   background-color: whitesmoke;
   font-size: 20px;
   overflow-x: hidden;
+}
+
+hr {
+  visibility: hidden;
 }
 
 /* Top and Bottom borders go out */
@@ -30,43 +34,38 @@ nav .navbar-brand {
 }
 
 nav a {
-  font-family: 'Russo One', sans-serif;
   font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
   margin: 0px 10px;
   padding: 10px 10px;
   position: relative;
   z-index: 0;
-  color: #000 !important;
+  color: rgba(0, 0, 0, 0.6) !important;
   cursor: pointer;
 }
 
-nav a:before,
+
 nav a:after {
   position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #000;
+  left: 10px;
+  height: 4px;
+  background: #0008;
   content: "";
   opacity: 0;
   transition: all 0.3s;
 }
 
-nav a:before {
-  top: 0px;
-  transform: translateY(10px);
-}
-
 nav a:after {
+  width: 30px;
+  border-radius: 20px;
   bottom: 0px;
-  transform: translateY(-10px);
+  transform: translateX(-10px);
 }
 
-nav a:hover:before,
 nav a:hover:after {
   opacity: 1;
-  transform: translateY(0px);
+  transform: translateX(0px);
 }
 
 nav img {
@@ -94,8 +93,31 @@ nav img {
 #myBtn:hover {}
 
 /* TO_TOP_BTN END*/
+.banner::after, .banner::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: skew(50deg) translateX(-50%);
+  transform: skew(50deg) translateX(-50%);
+  width: 75%;
+  height: 90%;
+  background-image: linear-gradient(120deg, rgba(0, 0, 0), transparent);
+  background-color: #333;
+  opacity: .3;
+}
+
+.banner::before {
+  -webkit-transform: skew(-50deg) translateX(-50%);
+  transform: skew(-50deg) translateX(-50%);
+}
+
+.banner {
+  overflow: hidden;
+}
+
 .Logo {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 40%), url("../images/beach-bunch-of-flowers-celebration-169193.jpg");
+  background-image: url("../images/beach-bunch-of-flowers-celebration-169193.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -118,12 +140,11 @@ nav img {
   text-align: center;
   font-weight: 500;
   font-size: 100px;
-  background: linear-gradient(5deg, #000, #bb981d, #fad25a);
+  background: linear-gradient(5deg, #0003, #bb981d, #fad25a);
   /* background: linear-gradient(330deg, #000 0%, #bb981d 25%, #c7a42b 50%, #d4af37 75%, #fad25a 100%); */
   /* background: linear-gradient(45deg, #fff 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* line-height: 200px; */
 }
 
 .Logo p {
@@ -175,101 +196,112 @@ polygon.arrow-top {
   margin-bottom: 5%;
 }
 
-.OutDoor {
-  height: 70vh;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0) 70%), url("../images/barbecue-bbq-chicken-8572.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #fff;
-  padding-top: 5%;
-  border-radius: 0 20px 0 10px;
-  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.5);
+#services h1 {
+  color: #3e3c3c;
+  font-size: 30px;
+  letter-spacing: 1px;
 }
 
-.dinnerParties {
-  height: 70vh;
-  background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0) 70%), url("../images/alcohol-alcoholic-dinner-6290.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #fff;
-  padding-top: 5%;
-  border-radius: 0 20px 0 10px;
-  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.5);
-}
-
-.Sound {
-  height: 70vh;
-  background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0) 70%), url("../images/amplifier-audio-mixer-blur-1481310.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #fff;
-  padding-top: 5%;
-  border-radius: 0 20px 0 10px;
-  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.5);
+#services h1 span {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
 }
 
 .card {
-  width: 70%;
-  background-color: transparent;
+  width: 100%;
+  height: 55vh;
+  padding: 10px;
   border-style: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.card .servicesImages {
+  position: absolute;
+  top: -20px;
+  width: 60%;
+  height: 300px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.8);
 }
 
 .card h2 {
-  font-family: 'Russo One', sans-serif;
+  color: #302d2d !important;
+  font-size: 26px;
+  font-weight: 700;
 }
 
-.card img{
-  width: 70px;
-  height: 70px;
-
+.borderB {
+  width: 60px;
+  height: 4.5px;
+  position: absolute;
+  top: 70px;
+  border-radius: 20px;
+  background-color: #302d2d;
+  transition: all .3s ease;
 }
-.card img{
+
+.card:hover .borderB {
+  width: 100px;
+  height: 4.5px;
+  position: absolute;
+  top: 70px;
+  border-radius: 20px;
+  background-color: #fad25a;
+}
+
+.card .servicesIcons {
   width: 70px;
   height: 70px;
-
   -webkit-animation: swing 2s ease-out;
   animation: swing 2s ease-out;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-
   animation-play-state: paused;
 }
 
-.container:hover .card img{
+.card:hover .servicesIcons {
   animation-play-state: running;
 }
 
-
 .card p {
-  width: 80%;
-  opacity: 0;
-  border: 5px solid #fff8;
-  margin-top: -10%;
-  padding: 10px;
-  border-radius: 0 20px 0 10px;
-  transition: .4s ease;
+  color: #3e3c3c;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
-.container:hover .card p {
-  margin-top: 0;
-  opacity: 1;
+
+.card a {
+  text-decoration: none;
+}
+
+.OutDoor {
+  color: #fff;
+  padding-top: 5%;
+  /* border-radius: 0 20px 0 10px; */
+}
+
+.dinnerParties {
+  color: #fff;
+  padding-top: 5%;
+  /* border-radius: 0 20px 0 10px; */
+}
+
+.Sound {
+  color: #fff;
+  padding-top: 5%;
+  /* border-radius: 0 20px 0 10px; */
+}
+
+.arrowRight {
+  transition: all .5s ease;
+}
+
+.readMore:hover .arrowRight {
+  margin-left: 10px;
 }
 
 .footer {
+  color: #413f3f;
   bottom: 0;
   text-align: center;
 }
@@ -289,6 +321,11 @@ polygon.arrow-top {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* line-height: 200px; */
+}
+
+.footerSlogan {
+  font-family: 'Sacramento', cursive;
+  font-size: 30px;
 }
 
 .wrapper {
@@ -374,15 +411,15 @@ polygon.arrow-top {
 .imageLogo img:hover {
   -webkit-animation: swing 1s ease;
   animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 /* NOD ANIMATION END*/
 /* FADEIN SLIDE ANIMATION */
 .fadeInUp {
-  -webkit-animation: fadeInUp 3s ease;
-  animation: fadeInUp 3s ease;
+  -webkit-animation: fadeInUp 2s ease;
+  animation: fadeInUp 2s ease;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both
 }
@@ -428,14 +465,27 @@ polygon.arrow-top {
     margin-top: 8%;
   }
 }
+@media (max-width: 1279px) {
+  .Logo {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 90%, transparent ), url("../images/beach-bunch-of-flowers-celebration-169193.jpg");
+    overflow-x: hidden;
+    padding-top: 20%;
+  }
+  .banner{
+    display: none;
+  }
+}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   body {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
+    overflow-x: hidden!important;
   }
 
   .navbar {
-    background: linear-gradient(to right, #fff 30%, rgba(255, 255, 255, 0.9) 30%);
+    background: #fff;
   }
 
   nav .navbar-brand {
@@ -453,22 +503,26 @@ polygon.arrow-top {
   }
 
   .Logo {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 90%, transparent ), url("../images/beach-bunch-of-flowers-celebration-169193.jpg");
+    overflow-x: hidden;
     padding-top: 20%;
   }
 
   .Logo h1 {
     font-size: 50px;
   }
-
-  .OutDoor {
-    height: 70vh;
+  .banner{
+    display: none;
   }
-
-  .dinnerParties {
-    height: 70vh;
+  .card {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.4);
   }
-
-  .Sound {
-    height: 70vh;
+  .footer h3{
+    font-size: 50px;
   }
 }
