@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BENWIX</title>
-  <link href="https://fonts.googleapis.com/css?family=Megrim|Sacramento|Russo+One|Kreon" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Megrim|Raleway|Sacramento|Russo+One|Kreon" rel="stylesheet">
   <link rel="shortcut icon" href="images/calendar.png">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/slider.css">
-
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 
 <body>
@@ -19,118 +19,121 @@
     <img src="images/menu-button.png" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#WhatWeDo">WHAT WE DO</a>
-        <a class="nav-item nav-link" href="#Gallery">GALLERY</a>
-        <a class="nav-item nav-link" href="#footer">CONTACT</a>
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#services">Services</a>
+        <a class="nav-item nav-link" href="#Gallery">Gallery</a>
+        <a class="nav-item nav-link" href="#footer">Contact</a>
       </div>
     </div>
   </nav>
   <img onclick="topFunction()" id="myBtn" title="Go to top" src="images/long-arrow-pointing-up.png">
 
+
+  <div class="Logo mb-5">
+    <div class="banner">
+
+    </div>
+
+    <div class="imageLogo  fadeInUp" style="display:flex;justify-content:center;align-items:center;">
+      <img src="images/calendar.png">
+    </div>
+    <h1 class="fadeInUp">BENWIX</h1>
+    <p class="fadeInUp mb-5">A first-class experience, everytime.</p>
+<br>
+
+    <div class="fadeInUp mt-5" style="display:flex;justify-content:center;align-items:center;">
+      <div>
+        <svg id="more-arrows">
+          <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
+          <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 " />
+          <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 " />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+<hr>
+
   <div class="container-fluid">
+    <div class="container my-5" id="services">
 
-    <div class="container-fluid Logo">
+    <h1>Have a look at the <span>fun you're missing</span> out on.</h1>
 
-      <div class="imageLogo  fadeInUp" style="display:flex;justify-content:center;align-items:center;">
-        <img src="images/calendar.png">
-      </div>
-      <h1 class=" fadeInUp">BENWIX</h1>
-      <p class=" fadeInUp">A first-class experience, everytime.</p>
 
-      <div style="display:flex;justify-content:center;align-items:center;">
-        <div>
-          <svg id="more-arrows">
-            <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
-            <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 " />
-            <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 " />
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <div class="container OutDoor" id="WhatWeDo">
       <div class="row">
-        <div class="col-md-6">
 
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <h2>Outdoor Events <img src="images/meat.png"> </h2>
+        <div class="col-md-4 my-5">
+          <div class="card OutDoor">
+            <!-- <img class="servicesImages mb-5" src="images/barbecue-bbq-chicken-8572.jpg" alt=""> -->
+
+            <h2>Outdoor Events <img class="servicesIcons" src="images/meat.png"> </h2>
+            <div class="borderB"></div>
+
             <p>From Rare Barbecue moments, Natural parks and outdoor amphitheaters to some of our most exhilirating waterfront beaches we are sure to make an unforgettable experience, not just a festival.</p>
+
+            <a href="" class="readMore">Read More <span class="arrowRight">&#8702;</span></a>
+
+
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="container dinnerParties">
-      <div class="row">
-        <div class="col-md-6" style="display:flex;justify-content:center;align-items:center;">
-          <div class="card">
-            <h2>Dinner Parties <img src="images/dinner.png"> </h2>
-            <p>When you picture the perfect dinner party, you probably think of a dozen close friends gathered around the table, enjoying a meal, sipping wine and engaging in endless conversations. The first crucial decision when it comes to hosting
+
+        <div class="col-md-4 my-5">
+          <div class="card dinnerParties">
+
+            <h2>Dinner Parties <img class="servicesIcons" src="images/dinner.png"> </h2>
+            <div class="borderB"></div>
+
+            <p>When you picture the perfect dinner party, you probably think of a dozen close friends gathered around the table, enjoying a meal, sipping wine and engaging in endless conversations. The first crucial decision when it comes to
+              hosting
               a dinner party is what kind of ambience you'd like to create. </p>
+
+            <a href="" class="readMore">Read More <span class="arrowRight">&#8702;</span></a>
+
           </div>
-
         </div>
-        <div class="col-md-6">
 
-        </div>
-      </div>
-    </div>
+        <div class="col-md-4 my-5">
+          <div class="card Sound">
 
-    <div class="container Sound">
-      <div class="row">
-        <div class="col-md-6" style="display:flex;justify-content:center;align-items:center;">
-          <div class="card">
-            <h2>Indoor Parties <img src="images/sea-bottom.png"> </h2>
-            <p>If you prefer to have a good time in privacy or simply need some ideas for rainy day activities for the kids, well, we've got you covered, take your pick from indoor attractions such as museums, aquariums and galleries, or if you’re
+
+            <h2 class="">Indoor Parties <img class="servicesIcons" src="images/sea-bottom.png"> </h2>
+            <div class="borderB"></div>
+
+            <p>If you prefer to have a good time in privacy or simply need some ideas for rainy day activities for the kids, well, we've got you covered, take your pick from indoor attractions such as museums, aquariums and galleries, or if
+              you’re
               feeling braver, there are climbing centres, underground caverns and ice skating rinks.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
 
+            <a href="" class="readMore">Read More <span class="arrowRight">&#8702;</span></a>
+
+          </div>
         </div>
 
       </div>
-
-
     </div>
 
-    <div class="container Gallery" id="Gallery">
-
-      <div class="cards-wrapper">
-        <div class="card__text-content">
-          <h2 class="card__title">Events Gallery</h2>
-          <div class="card__summary"></div>
-        </div>
-        <ul class="cards__container">
-          <li class="box"><img src="images/gallery/IMG_2034.JPG"></li>
-          <li class="box"><img src="images/gallery/IMG_2035.JPG"></li>
-          <li class="box"><img src="images/gallery/IMG_2045.JPG"></li>
-          <li class="box"><img src="images/gallery/IMG_2047.JPG"></li>
-          <li class="box"><img src="images/gallery/IMG_2051.JPG"></li>
-          <li class="box box--hide"><img src="images/gallery/IMG_2042.JPG"></li>
-          <li class="box box--hide"><img src="images/gallery/IMG_2041.JPG"></li>
-        </ul>
-        <div class="container" style="display:flex;justify-content:center;align-items:center;">
-          <div class="row">
-
-            <div class="button" onclick="shiftLeft()"><img src="images/left.png"></div>
-
-            <div class="button" onclick="shiftRight()"><img src="images/right.png"></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
 
   </div>
+
   <hr>
 
 
-  <div class="footer" id="footer">
-    <h4>| FOLLOW US |</h4>
+  <div class="container slick autoplay my-4" id="Gallery">
+
+    <div><img src="images/gallery/IMG_2034.JPG"></div>
+    <div><img src="images/gallery/IMG_2035.JPG"></div>
+    <div><img src="images/gallery/IMG_2045.JPG"></div>
+    <div><img src="images/gallery/IMG_2047.JPG"></div>
+    <div><img src="images/gallery/IMG_2051.JPG"></div>
+    <div><img src="images/gallery/IMG_2042.JPG"></div>
+    <div><img src="images/gallery/IMG_2041.JPG"></div>
+
+  </div>
+
+  <hr>
+
+  <div class="footer mt-5" id="footer">
+    <h4><strong>|</strong> FOLLOW US <strong>|</strong></h4>
     <div class="wrapper" style="display:flex;justify-content:center;align-items:center;">
       <img src="images/facebook.png" title="facebook">
       <img src="images/instagram.png" title="instagram">
@@ -139,20 +142,20 @@
     </div>
     <hr>
     <h3>BENWIX</h3>
-    <p style="font-family: 'Sacramento', cursive; font-size: 30px;">A First Class Experince, Everytime.</p>
-    <div class="row" style="margin-bottom: 5%;">
-      <div class="col-md-4">
-        <h5>TERMS & CONDITIONS</h5>
-        <h5>PRIVACY POLICY</h5>
+    <p class="footerSlogan">A First Class Experince, Everytime.</p>
+    <div class="row mt-5">
+      <div class="col-md-4 mb-4">
+        <h6>TERMS & CONDITIONS</h6>
+        <h6>PRIVACY POLICY</h6>
       </div>
 
-      <div class="col-md-4">
-        <h5><u>lOCATION</u></h5>
+      <div class="col-md-4 mb-4">
+        <h5><u><strong>lOCATION</strong></u></h5>
         <h6>Nairobi,</h6>
         <h6>KENYA</h6>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
 
       </div>
     </div>
@@ -164,7 +167,7 @@
 
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-  <script src='js/slider.js'></script>
+  <script src="js/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
