@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+:target {
+  display: block;
+  top: 120px;
+}
+
 hr {
   visibility: hidden;
 }
@@ -16,7 +21,6 @@ hr {
 /* Top and Bottom borders go out */
 .navbar {
   width: 100%;
-  top: 0;
   background: linear-gradient(45deg, #fff 20%, rgba(255, 255, 255, 0.9) 20%);
   box-shadow: 0 0 20px 5px rgba(0, 0, 0);
 }
@@ -44,7 +48,6 @@ nav a {
   color: rgba(0, 0, 0, 0.6) !important;
   cursor: pointer;
 }
-
 
 nav a:after {
   position: absolute;
@@ -217,14 +220,6 @@ polygon.arrow-top {
   box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.4);
 }
 
-.card .servicesImages {
-  position: absolute;
-  top: -20px;
-  width: 60%;
-  height: 300px;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.8);
-}
-
 .card h2 {
   color: #302d2d !important;
   font-size: 26px;
@@ -253,15 +248,16 @@ polygon.arrow-top {
 .card .servicesIcons {
   width: 70px;
   height: 70px;
-  -webkit-animation: swing 2s ease-out;
-  animation: swing 2s ease-out;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  animation-play-state: paused;
+
+  /* -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
+  /* animation-play-state: paused; */
 }
 
 .card:hover .servicesIcons {
-  animation-play-state: running;
+  -webkit-animation: swing 2s ease-out;
+  animation: swing 2s ease-out;
+  /* animation-play-state: running; */
 }
 
 .card p {
@@ -300,6 +296,19 @@ polygon.arrow-top {
   margin-left: 10px;
 }
 
+#Gallery h1 {
+  color: #2a2929;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+#Gallery h1 span {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+
+}
+
 .footer {
   color: #413f3f;
   bottom: 0;
@@ -321,6 +330,10 @@ polygon.arrow-top {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* line-height: 200px; */
+}
+
+.footer hr {
+  visibility: visible;
 }
 
 .footerSlogan {
@@ -465,13 +478,15 @@ polygon.arrow-top {
     margin-top: 8%;
   }
 }
+
 @media (max-width: 1279px) {
   .Logo {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 90%, transparent ), url("../images/beach-bunch-of-flowers-celebration-169193.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 90%, transparent), url("../images/beach-bunch-of-flowers-celebration-169193.jpg");
     overflow-x: hidden;
     padding-top: 20%;
   }
-  .banner{
+
+  .banner {
     display: none;
   }
 }
@@ -481,7 +496,7 @@ polygon.arrow-top {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    overflow-x: hidden!important;
+    overflow-x: hidden !important;
   }
 
   .navbar {
@@ -503,7 +518,7 @@ polygon.arrow-top {
   }
 
   .Logo {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 90%, transparent ), url("../images/beach-bunch-of-flowers-celebration-169193.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 90%, transparent), url("../images/beach-bunch-of-flowers-celebration-169193.jpg");
     overflow-x: hidden;
     padding-top: 20%;
   }
@@ -511,9 +526,11 @@ polygon.arrow-top {
   .Logo h1 {
     font-size: 50px;
   }
-  .banner{
+
+  .banner {
     display: none;
   }
+
   .card {
     width: 100%;
     height: 400px;
@@ -522,7 +539,8 @@ polygon.arrow-top {
     border-radius: 12px;
     box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.4);
   }
-  .footer h3{
+
+  .footer h3 {
     font-size: 50px;
   }
 }
