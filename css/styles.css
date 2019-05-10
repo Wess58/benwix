@@ -9,11 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-:target {
-  display: block;
-  top: 120px;
-}
-
 hr {
   visibility: hidden;
 }
@@ -53,7 +48,7 @@ nav a:after {
   position: absolute;
   left: 10px;
   height: 4px;
-  background: #0008;
+  background: #bb981d;
   content: "";
   opacity: 0;
   transition: all 0.3s;
@@ -96,7 +91,7 @@ nav img {
 #myBtn:hover {}
 
 /* TO_TOP_BTN END*/
-.banner::after, .banner::before {
+/* .banner::after, .banner::before {
   content: " ";
   position: absolute;
   top: 0;
@@ -117,10 +112,10 @@ nav img {
 
 .banner {
   overflow: hidden;
-}
+} */
 
 .Logo {
-  background-image: url("../images/beach-bunch-of-flowers-celebration-169193.jpg");
+  background-image: url("../images/hisu-lee-169301.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -132,10 +127,18 @@ nav img {
   height: 90vh;
 }
 
-.Logo img {
-  width: 10%;
-  height: 10%;
+.imageLogo img {
+  position: relative;
+  left: 30%;
+  width: 300px;
+  height: 300px;
   margin-top: 5%;
+}
+.imageLogo img:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 .Logo h1 {
@@ -152,8 +155,9 @@ nav img {
 
 .Logo p {
   text-align: center;
+  color: #bb981d;
   font-family: 'Sacramento', cursive;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 /* Arrow & Hover Animation START*/
@@ -163,7 +167,7 @@ nav img {
 }
 
 #more-arrows:hover polygon {
-  fill: #fff;
+  fill: #bb981d;
   transition: all .3s ease-out;
 }
 
@@ -178,7 +182,7 @@ nav img {
 }
 
 polygon {
-  fill: #fff;
+  fill: #000;
   transition: all .2s ease-out;
 }
 
@@ -239,8 +243,6 @@ polygon.arrow-top {
 .card:hover .borderB {
   width: 100px;
   height: 4.5px;
-  position: absolute;
-  top: 70px;
   border-radius: 20px;
   background-color: #fad25a;
 }
@@ -248,7 +250,6 @@ polygon.arrow-top {
 .card .servicesIcons {
   width: 70px;
   height: 70px;
-
   /* -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; */
   /* animation-play-state: paused; */
@@ -263,7 +264,7 @@ polygon.arrow-top {
 .card p {
   color: #3e3c3c;
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .card a {
@@ -291,9 +292,12 @@ polygon.arrow-top {
 .arrowRight {
   transition: all .5s ease;
 }
-
+.readMore{
+  color: #bb981d!important;
+}
 .readMore:hover .arrowRight {
   margin-left: 10px;
+
 }
 
 #Gallery h1 {
@@ -306,7 +310,6 @@ polygon.arrow-top {
   font-weight: 600;
   font-size: 30px;
   letter-spacing: 1px;
-
 }
 
 .footer {
@@ -339,6 +342,11 @@ polygon.arrow-top {
 .footerSlogan {
   font-family: 'Sacramento', cursive;
   font-size: 30px;
+}
+.footerLogo img{
+
+  width: 50px;
+  height: 50px;
 }
 
 .wrapper {
@@ -421,12 +429,7 @@ polygon.arrow-top {
   }
 }
 
-.imageLogo img:hover {
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
+
 
 /* NOD ANIMATION END*/
 /* FADEIN SLIDE ANIMATION */
@@ -479,15 +482,27 @@ polygon.arrow-top {
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1030px) {
   .Logo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 90%, transparent), url("../images/beach-bunch-of-flowers-celebration-169193.jpg");
-    overflow-x: hidden;
-    padding-top: 20%;
+    background-image: url("../images/hisu-lee-169301.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    height: 50vh;
   }
 
-  .banner {
-    display: none;
+  .card {
+    width: 100%;
+    height: 32vh;
+    padding: 10px;
+    border-style: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -518,9 +533,16 @@ polygon.arrow-top {
   }
 
   .Logo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 90%, transparent), url("../images/beach-bunch-of-flowers-celebration-169193.jpg");
+    background-image: url("../images/hisu-lee-169301.jpg");
     overflow-x: hidden;
     padding-top: 20%;
+  }
+  .imageLogo img {
+    position: relative;
+    left: 20%;
+    width: 200px;
+    height: 200px;
+    margin-top: 5%;
   }
 
   .Logo h1 {
@@ -538,6 +560,19 @@ polygon.arrow-top {
     border-style: none;
     border-radius: 12px;
     box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  .card .servicesIcons {
+    display: none;
+  }
+  .borderB {
+    width: 60px;
+    height: 4.5px;
+    position: absolute;
+    top: 40px;
+    border-radius: 20px;
+    background-color: #302d2d;
+    transition: all .3s ease;
   }
 
   .footer h3 {
