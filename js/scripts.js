@@ -31,6 +31,15 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [{
+      breakpoint: 1030,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplaySpeed: 2000
+
+
+      }
+    }, {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,

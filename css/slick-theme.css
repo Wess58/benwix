@@ -40,7 +40,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: #000;
+    background: #bb981d99;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -200,7 +200,7 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: #bb981d;
 }
 
 @media only screen and (max-width: 768px) {
